@@ -7,10 +7,6 @@ defineProps({
     default: 'light',
     validator: (v) => ['light', 'dark'].includes(v),
   },
-  brandTo: {
-    type: String,
-    default: null,
-  },
 })
 </script>
 

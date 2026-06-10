@@ -1,5 +1,6 @@
 <script setup>
 import BackLink from '@/components/ui/BackLink.vue'
+import SectionDivider from '@/components/ui/SectionDivider.vue'
 
 defineProps({
   count: {
@@ -14,6 +15,7 @@ defineProps({
     <div class="header-content">
       <div class="back-wrapper">
         <BackLink to="/" label="Back to recipes" />
+        <SectionDivider />
       </div>
 
       <h1>My Favorites</h1>
@@ -36,6 +38,13 @@ defineProps({
   padding: var(--space-xl) var(--space-2xl) var(--space-2xl);
 }
 
+.back-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: 1.25rem;
+}
+
 .header-content h1 {
   font-family: var(--font-serif);
   font-size: 2.25rem;
@@ -45,8 +54,7 @@ defineProps({
 }
 
 .subtitle {
-  color: var(--color-primary);
-  font-size: 1rem;
-  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
 }
 </style>

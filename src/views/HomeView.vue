@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import { useRecipeStore } from '@/stores/recipes'
 import PageLayout from '@/components/layout/PageLayout.vue'
 import SectionMeta from '@/components/home/SectionMeta.vue'
-import RecepeList from '@/components/RecepeList.vue'
+import RecipeList from '../components/RecipeList.vue'
 
 const recipeStore = useRecipeStore()
 
@@ -18,7 +18,7 @@ onMounted(() => {
   <PageLayout>
     <main class="main-content">
       <SectionMeta />
-      <RecepeList />
+      <RecipeList />
     </main>
   </PageLayout>
 </template>

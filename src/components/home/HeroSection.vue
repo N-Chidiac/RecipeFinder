@@ -31,11 +31,6 @@ import RecentSearches from '@/components/home/RecentSearches.vue'
 .hero {
   --hero-nav-height: 4.5rem;
   --hero-bg: linear-gradient(160deg, var(--color-bg-hero-end) 0%, var(--color-bg-hero-start) 100%);
-  --reverse-hero-bg: linear-gradient(
-    160deg,
-    var(--color-bg-hero-end) 0%,
-    var(--color-bg-hero-start) 100%
-  );
 
   background: var(--hero-bg);
   padding-bottom: var(--space-3xl);
@@ -46,7 +41,7 @@ import RecentSearches from '@/components/home/RecentSearches.vue'
   top: 0;
   z-index: 20;
   width: 100%;
-  background: var(--reverse-hero-bg);
+  background: var(--hero-bg);
 }
 
 .hero-tools-sticky {

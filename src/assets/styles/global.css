@@ -18,6 +18,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
 }
 
 img,
@@ -135,12 +138,6 @@ ol {
   --transition-fast: 0.18s ease;
   --transition-base: 0.2s ease;
   --transition-slow: 0.45s ease;
-}
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--color-bg-page);
-  color: var(--color-text-primary);
 }
 
 #app {

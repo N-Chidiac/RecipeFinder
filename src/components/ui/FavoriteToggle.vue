@@ -8,7 +8,7 @@ defineProps({
   },
   activeLabel: {
     type: String,
-    default: 'Delete favorrite',
+    default: 'Delete favorite',
   },
   inactiveLabel: {
     type: String,

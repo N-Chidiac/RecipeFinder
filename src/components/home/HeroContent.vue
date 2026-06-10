@@ -12,7 +12,25 @@
   margin: 0 auto;
   text-align: center;
   padding: 1rem 2rem 2rem;
-  margin-top: 5%;
+  margin-top: 8%;
+}
+
+@media (max-width: 1000px) {
+  .hero-content {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-content {
+    margin-top: 20%;
+  }
 }
 
 .eyebrow {
@@ -42,29 +60,5 @@
   color: var(--color-text-on-dark-muted);
   font-size: 0.95rem;
   line-height: 1.6;
-}
-
-@media screen and (max-width: 1000px) {
-  .hero-content {
-    margin-top: 10%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .hero-content {
-    margin-top: 8%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .hero-content {
-    margin-top: 15%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .hero-content {
-    margin-top: 20%;
-  }
 }
 </style>
