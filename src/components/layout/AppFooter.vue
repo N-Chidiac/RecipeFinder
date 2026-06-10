@@ -16,8 +16,7 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .app-footer {
-  border-top: 1px solid var(--color-border);
-  background: var(--color-bg-white);
+  background: var(--color-bg-hero-start);
   margin-top: auto;
 }
 
@@ -34,7 +33,7 @@ import { RouterLink } from 'vue-router'
 
 .footer-copy {
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-inverse);
 }
 
 .footer-nav {
@@ -45,7 +44,7 @@ import { RouterLink } from 'vue-router'
 .footer-nav a {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-text-body);
+  color: var(--color-text-inverse);
   text-decoration: none;
   transition: color var(--transition-base);
 }

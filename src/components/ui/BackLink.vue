@@ -27,9 +27,9 @@ defineProps({
   align-items: center;
   gap: 2px;
   text-decoration: none;
-  color: var(--color-text-muted);
-  font-size: 0.875rem;
-  font-weight: 500;
+  color: var(--color-text-body);
+  font-size: 1rem;
+  font-weight: 600;
   transition: color var(--transition-base);
 }
 

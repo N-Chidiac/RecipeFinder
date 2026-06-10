@@ -27,8 +27,6 @@ defineProps({
 
 <style scoped>
 .page-header {
-  background: var(--color-bg-white);
-  border-bottom: 1px solid var(--color-border);
   margin-bottom: var(--space-2xl);
 }
 
@@ -36,10 +34,6 @@ defineProps({
   max-width: var(--max-width-content);
   margin: 0 auto;
   padding: var(--space-xl) var(--space-2xl) var(--space-2xl);
-}
-
-.back-wrapper {
-  margin-bottom: 1.25rem;
 }
 
 .header-content h1 {
@@ -51,7 +45,8 @@ defineProps({
 }
 
 .subtitle {
-  color: var(--color-text-muted);
-  font-size: 0.9rem;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 500;
 }
 </style>

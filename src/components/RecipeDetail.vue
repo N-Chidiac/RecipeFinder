@@ -3,12 +3,12 @@ import { useRoute } from 'vue-router'
 import { useRecipeStore } from '@/stores/recipes'
 import { onMounted, watch } from 'vue'
 import PageLayout from '@/components/layout/PageLayout.vue'
-import AppNavbar from '@/components/layout/AppNavbar.vue'
 import BackLink from '@/components/ui/BackLink.vue'
 import RecipeHero from '@/components/recipe/RecipeHero.vue'
 import RecipeIngredients from '@/components/recipe/RecipeIngredients.vue'
 import RecipeInstructions from '@/components/recipe/RecipeInstructions.vue'
 import VideoLink from '@/components/recipe/VideoLink.vue'
+import SectionDivider from './ui/SectionDivider.vue'
 
 const route = useRoute()
 const recipeStore = useRecipeStore()
@@ -36,11 +36,10 @@ watch(
 
 <template>
   <PageLayout>
-    <AppNavbar variant="light" brand-to="/">
-      <template #actions>
-        <BackLink to="/" label="Back" />
-      </template>
-    </AppNavbar>
+    <div class="back-wrapper">
+      <BackLink to="/" label="Back" />
+      <SectionDivider />
+    </div>
 
     <p v-if="recipeStore.detailLoading" class="detail-status">Load recipe…</p>
 
@@ -67,6 +66,10 @@ watch(
           :href="recipeStore.selectedRecipe.videoLink"
         />
       </div>
+      <div class="back-wrapper">
+        <BackLink to="/" label="Back" />
+        <SectionDivider />
+      </div>
     </div>
 
     <p v-else class="detail-status">Recipe not found.</p>
@@ -74,6 +77,24 @@ watch(
 </template>
 
 <style scoped>
+.back-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: 1.25rem;
+  margin-top: 1.75rem;
+
+  max-width: var(--max-width-detail);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--space-lg);
+}
+
+.recipe-page .back-wrapper {
+  padding: 0;
+  max-width: none;
+}
+
 .detail-status {
   text-align: center;
   color: var(--color-text-muted);
