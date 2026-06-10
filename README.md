@@ -27,12 +27,16 @@ npm install
 npm run dev
 ```
 
-```bash
 # Production build
+
+```bash
 npm run build
 npm run preview
+```
 
 # Lint & format
+
+```bash
 npm run lint
 npm run format
 ```
